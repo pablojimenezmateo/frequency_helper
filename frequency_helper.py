@@ -3,6 +3,7 @@ while not opcion:
 	print 'Choose a dictionary'
 	print '1.- Spanish'
 	print '2.- English'
+	print '3.- Catalan'
 	choice=int(raw_input('Option: '))
 	if choice==1:
 		print 'All the special characters have been removed'
@@ -10,6 +11,9 @@ while not opcion:
 		opcion=True
 	elif choice==2:
 		f=open("Dictionaries/english.txt","r")
+		opcion=True
+	elif choice==3:
+		f=open("Dictionaries/catalan.txt","r")
 		opcion=True
 print "\nUse '#' to multiple matches in the same word"
 print "\nUse '_' for any other character"
